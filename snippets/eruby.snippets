@@ -111,3 +111,7 @@ snippet slt
 	<%= stylesheet_link_tag ${1::all}, :cache => ${2:true} %>
 snippet sslt
 	<%= stylesheet_link_tag "${1}" %>
+snippet allflash
+	<% flash.each do |key, msg| %>
+	  <%= content_tag :div, msg, :id => key %>
+	<% end %>
