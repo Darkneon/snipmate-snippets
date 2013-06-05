@@ -975,3 +975,12 @@ snippet itb
 	it_behaves_like "${1:shared examples name}"${2}
 snippet ana
 	accepts_nested_attributes_for :${1:association}
+#Capybara
+snippet capy_vfc
+	visit ${1:url}
+	fill_in ${2:name}, with: ${3:value}
+	click_button ${4:text}
+snippet capy_have_content
+	page.should have_content ${1:content}
+snippet capy_page_eq
+	current_path.should eq ${1:page_path}
