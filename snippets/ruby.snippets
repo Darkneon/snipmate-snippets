@@ -955,6 +955,10 @@ snippet let
 	let(:${1:object}) ${2:block}
 snippet let!
 	let!(:${1:object}) ${2:block}
+snippet letc
+	let(:${1:object}) { FactoryGirl.create(:${1:object}) }
+snippet letb
+	let(:${1:object}) { FactoryGirl.build(:${1:object}) }
 snippet subj
 	subject { ${1} }
 snippet spec
