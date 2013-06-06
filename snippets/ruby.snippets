@@ -986,3 +986,5 @@ snippet capy_page_eq
 	current_path.should eq ${1:path}
 snippet capy_post
 	page.driver.post ${1:path} ${2:arg_name}: ${3:value}
+snippet copy_have_css
+	page.should have_css("${1:css}", count: ${2:1})
