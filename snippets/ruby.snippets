@@ -976,18 +976,22 @@ snippet itb
 snippet ana
 	accepts_nested_attributes_for :${1:association}
 
-#more rspec
+#more rspec + shoulda
 
 snippet ithdbc
-	it { should have_db_column(:${1:column}).of_type(:${2:type})
+	it { should have_db_column(:${1:column}).of_type(:${2:type}) }
 snippet itvpo
-	it { should validate_presence_of(:${1:column})
+	it { should validate_presence_of(:${1:column}) }
 snippet itvuo
-	it { should validate_uniqueness_of(:${1:column})
+	it { should validate_uniqueness_of(:${1:column}) }
 snippet itelol
-	it { should ensure_length_of(:${1:column}).is_at_least(${2:value})
+	it { should ensure_length_of(:${1:column}).is_at_least(${2:value}) }
 snippet itelom
-	it { should ensure_length_of(:${1:column}).is_at_most(${2:value})
+	it { should ensure_length_of(:${1:column}).is_at_most(${2:value}) }
+snippet ithm
+	it { should have_many(:${1:association}) }
+snippet itbt
+	it { should belong_to(:${1:association}) }
 
 #Capybara
 snippet capy_vfc
